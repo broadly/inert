@@ -226,7 +226,7 @@ var createClass = function () {
           }
           if (root) activeElement = root.activeElement;
         }
-        if (startNode.contains(activeElement)) activeElement.blur();
+        if (startNode.contains && startNode.contains(activeElement)) activeElement.blur();
       }
 
       /**
